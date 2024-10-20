@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LINKS -->
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap" rel="stylesheet">
+    <!-- /LINKS -->
+
+    <title>BookHub</title>
+</head>
+<body>
+  <!-- header -->
+    <header>
+        <div class="logo">
+            <img class="bookHubLogo d-none d-lg-block" src="bookhub.png" alt="logo">
+        </div>
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#book">Book</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="userIcon">
+           <a class="btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+           <i class='bx bxs-user-circle'></i>
+          </a>
+        
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">User</a></li>
+            <li><a class="dropdown-item" href="#">Log out</a></li>
+          </ul>
+        </div>
+    </header>
+
+<!--SLIDER-->
+    <div class="slider">
+        <div class="list">
+            <div class="item active">
+                <img src="fantasy-1920x1080.jpg">
+                <div class="content">
+                    <p>Genre</p>
+                    <h2 class="genre">FANTASY</h2>
+                    <p>
+                        Fantasy fiction is a genre set in magical worlds, featuring 
+                        myths, magical creatures, and often drawing from medieval 
+                        history. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="history-1920x1080.jpg">
+                <div class="content">
+                    <p>Genre</p>
+                    <h2 class="genre">HISTORY </h2>
+                    <p>
+                        History textbooks are crucial in history education, helping students build 
+                        knowledge and develop skills to interpret the past with clarity, empathy, 
+                        imagination, and rigor.
+                    </p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="thriller-1920x1080.jpg">
+                <div class="content">
+                    <p>Genre</p>
+                    <h2 class="genre">THRILLER</h2>
+                    <p>
+                        Thriller is a fiction genre with subgenres like crime, horror, and 
+                        detective fiction. It is defined by the intense emotions it evokes, 
+                        such as suspense & excitement.
+                    </p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="romance-1920x1080.jpg">
+                <div class="content">
+                    <p>Genre</p>
+                    <h2 class="genre">ROMANCE</h2>
+                    <p>
+                        A romance novel is a genre of fiction centered on the relationship 
+                        and romantic love between two people, usually ending with emotion.
+                    </p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="biography-1920x1080.jpg">
+                <div class="content">
+                    <p>Genre</p>
+                    <h2 class="genre">BIOGRAPHY</h2>
+                    <p>
+                        A biography is a book about a person's life and work, often including 
+                        details about their family, friends, and colleagues.
+                    </p>
+                </div>
+            </div>
+        </div>
+       
+        <div class="arrows">
+            <button id="prev"></button>
+            <button id="next"></button>
+        </div>
+        
+        <div class="thumbnail">
+            <div class="item active">
+                <img src="fantasy.png">
+            </div>
+
+            <div class="item">
+                <img src="history.png">
+            </div>
+
+            <div class="item">
+                <img src="thriller.png">
+            </div>
+
+            <div class="item">
+                <img src="romance.png">
+            </div>
+
+            <div class="item">
+                <img src="biography.png">
+            </div>
+        </div>
+
+    </div>
+<!--/SLIDER-->
+    
+<div class="genreNav" id="book">
+    <li><a href="#">Fantasy</a></li>
+    <li><a href="#">History</a></li>
+    <li><a href="#">Thriller</a></li>
+    <li><a href="#">Romance</a></li>
+    <li><a href="#">Biography</a></li>
+</div>
+
+<!--FANTASY-->
+    <section>
+        <div class="continer fantasyBooks">
+            <div class="sliderWrapper">
+             
+                <h2 class="bookGenre">FANTASY</h2>
+              
+                <div class="cardList">
+        
+                    <div class="cardItem">
+                        <img class="bookImage" src="fantasy.png" alt="LOTR">
+                        <h2 class="title">Lord of The Rings</h2>
+                        <p class="author">John Ronald Reuel Tolkien</p>
+                        <div class="borrowReturn">
+                            <p>Return Date</p>
+                            <input type="date">
+                        </div>
+                        <button class="borrowNow">Borrow now</button>
+                    </div>
+                    
+        
+                  <div class="cardItem">
+                    <img class="bookImage" src="gameOfThrones.png" alt="AOT">
+                    <h2 class="title">Game of Thrones</h2>
+                    <p class="author">George R. R. Martin</p>
+                    <div class="borrowReturn">
+                        <p>Return Date</p>
+                        <input type="date">
+                    </div>
+                  <button class="borrowNow">Borrow now</button>
+                  </div>
+        
+                  <div class="cardItem">
+                    <img class="bookImage" src="ibongAdarna.png" alt="IA">
+                  <h2 class="title">Ibong Adarna</h2>
+                  <p class="author">Jose dela Cruz.</p>
+                  <div class="borrowReturn">
+                    <p>Return Date</p>
+                    <input type="date">
+                </div>
+                  <button class="borrowNow">Borrow now</button>
+                  </div>
+        
+                  <div class="cardItem">
+                    <img class="bookImage" src="jadeCity.png" alt="TJC">
+                  <h2 class="title">Jade City</h2>
+                  <p class="author">Fonda Lee</p>
+                   <div class="borrowReturn">
+                            <p>Return Date</p>
+                            <input type="date">
+                        </div>
+                  <button class="borrowNow">Borrow now</button>
+                  </div>
+        
+                </div>
+            </div>
+          </div>
+    </section>
+<!--/FANTASY-->
+    
+<!--HISTORY-->
+<section>
+    <div class="continer fantasyBooks">
+        <div class="sliderWrapper">
+         
+            <h2 class="bookGenre">HISTORY</h2>
+          
+            <div class="cardList">
+    
+                <div class="cardItem">
+                    <img class="bookImage" src="fantasy.png" alt="LOTR">
+                    <h2 class="title">Lord of The Rings</h2>
+                    <p class="author">John Ronald Reuel Tolkien</p>
+                    <div class="borrowReturn">
+                        <p>Return Date</p>
+                        <input type="date">
+                    </div>
+                    <button class="borrowNow">Borrow now</button>
+                </div>
+                
+    
+              <div class="cardItem">
+                <img class="bookImage" src="gameOfThrones.png" alt="AOT">
+                <h2 class="title">Game of Thrones</h2>
+                <p class="author">George R. R. Martin</p>
+                <div class="borrowReturn">
+                    <p>Return Date</p>
+                    <input type="date">
+                </div>
+              <button class="borrowNow">Borrow now</button>
+              </div>
+    
+              <div class="cardItem">
+                <img class="bookImage" src="ibongAdarna.png" alt="IA">
+              <h2 class="title">Ibong Adarna</h2>
+              <p class="author">Jose dela Cruz.</p>
+              <div class="borrowReturn">
+                <p>Return Date</p>
+                <input type="date">
+            </div>
+              <button class="borrowNow">Borrow now</button>
+              </div>
+    
+              <div class="cardItem">
+                <img class="bookImage" src="jadeCity.png" alt="TJC">
+              <h2 class="title">Jade City</h2>
+              <p class="author">Fonda Lee</p>
+               <div class="borrowReturn">
+                        <p>Return Date</p>
+                        <input type="date">
+                    </div>
+              <button class="borrowNow">Borrow now</button>
+              </div>
+    
+            </div>
+        </div>
+      </div>
+</section>
+<!--/HISTORY-->
+
+<!--THRILLER-->
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
